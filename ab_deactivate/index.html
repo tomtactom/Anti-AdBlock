@@ -1,0 +1,59 @@
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>
+	
+	<div class="ab_deactivate_container">
+		
+		<div class="ab_deactivate_select">
+			<h3>Wähle deinen Adblocker: </h3>
+			<ol>
+				<li id="blockerTab_adblock" style="display: flex;" OnClick="adblock()">
+					<img src="./images/icon_adblock.png" class="icon"> 
+					<span>AdBlock</span>
+				</li>
+				<li id="blockerTab_adblock_plus" style="display: flex;" OnClick="adblockplus()">
+					<img src="./images/icon_adblock_plus.png" class="icon"> 
+					<span>AdBlock Plus</span>
+				</li>
+				<li id="blockerTab_adguard" style="display: flex;" OnClick="adguard()">
+					<img src="./images/icon_adguard.png" class="icon"> 
+					<span>Adguard</span>
+				</li>
+				<li id="blockerTab_ublock_origin" style="display: flex;" OnClick="ublock()">
+					<img src="./images/icon_ublock_origin.png" class="icon"> 
+					<span>uBlock Origin</span>
+				</li>
+			</ol>
+		</div>
+		<div class="ab_deactivate_instruction">
+			<h1>Danke</h1>
+			<hr>
+			<p>für deine Hilfe!<br>
+			Durch dich bleibt 4fye am leben.</p>
+			<button OnClick="reloadSite()" title="Seite neuladen">Weiter</button>
+		</div>
+		<div class="ab_deactivate_instruction_video">
+			
+			<video width="220" height="295" loop muted autoplay style="display: inline-block;" id="video_adblock">
+				<source src="./videos/adblock_cr.mp4" type="video/mp4">
+				Dein Browser unterstützt den video tag nicht.
+			</video>
+			
+			<video width="220" height="295" loop muted autoplay style="display: none;" id="video_adblock_plus">
+				<source src="./videos/adblock_plus_cr.mp4" type="video/mp4">
+				Dein Browser unterstützt den video tag nicht.
+			</video>
+			
+			<video width="220" height="295" loop muted autoplay style="display: none;" id="video_adguard">
+				<source src="./videos/adguard_cr.mp4" type="video/mp4">
+				Dein Browser unterstützt den video tag nicht.
+			</video>
+			
+			<video width="220" height="295" loop muted autoplay style="display: none;" id="video_ublock_origin">
+				<source src="./videos/ublock_origin_cr.mp4" type="video/mp4">
+				Dein Browser unterstützt den video tag nicht.
+			</video>
+			
+		</div>
+		
+	</div>

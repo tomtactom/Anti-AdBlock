@@ -1,0 +1,118 @@
+:root {
+	--ab-deactivate-background: rgba(0, 0, 0, 0.7);
+	--ab-header-color: #db5757;
+	--ab-button-aus-color: #ffffff;
+	--ab-button-aus-background: #db5757;
+	--ab-button-continue-color: #db5757;
+}
+
+html {
+	background-color: cadetblue;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+aside#abshow {
+    position: fixed;
+    z-index: 1000;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--ab-deactivate-background);
+}
+
+.ab-main {
+    max-height: 780px;
+	max-width: 651px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+    background: rgb(255, 255, 255);
+    padding: 0px 0px 20px;
+    border-radius: 5px;
+	margin: auto;
+	margin-top: 200px;
+}
+
+.ab-header {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 100%;
+    height: 128px;
+    z-index: 0;
+    background: var(--ab-header-color);
+}
+
+.ab-content {
+	padding: 30px;
+}
+
+.ab-p-big {
+	margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    width: auto;
+	line-height: 1.5;
+}
+
+.ab-p {
+    line-height: 1.5;
+    width: 400px;
+    text-align: center;
+    padding: 0px;
+    margin: auto auto 15px;
+}
+
+.ab-inner img {
+	display: block;
+	height: 155px;
+    width: 155px;
+    margin: 0px auto;
+	margin-top: -100px;
+}
+button#abaus {
+	color: var(--ab-button-aus-color);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 0px 2px 0px;
+    background: var(--ab-button-aus-background);
+    padding: 10px 18px;
+    border-radius: 2px;
+	float: none;
+    display: block;
+    margin: 0px auto;
+	border-width: 0px;
+    border-style: none;
+	z-index: 1001;
+}
+
+button#abcontinue {
+	display: block;
+	margin-top: 5px;
+    color: var(--ab-button-continue-color);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0);
+    padding: 12px 24px;
+    border-radius: 2px;
+	border-width: 0px;
+    border-style: none;
+	margin: 10px auto;
+	font-weight: 550;
+	z-index: 1001;
+}
+
+iframe#abdeactivate {
+	display: flex;
+	width: 885px;
+    height: 310px;
+    border-width: 0px;
+    border-style: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1001;
+}
